@@ -1,6 +1,10 @@
 const state_rating = document.querySelector("#state_rating");
 const state_thankyou = document.querySelector("#state_thankyou");
 const submitBtn = document.querySelector(".submit_btn");
+const rateChoice = document.querySelector("#ratechoice");
+
+let lastToggled = null;
+let chosenOption;
 
 submitBtn.addEventListener("click", function() {
     this.style.backgroundColor = "white";
@@ -8,6 +12,8 @@ submitBtn.addEventListener("click", function() {
     state_rating.classList.add("hidden");
     state_thankyou.classList.remove("hidden");
     state_thankyou.classList.add("flex");
+    chosenOption = lastToggled.textContent;
+    rateChoice.textContent = chosenOption;
 })
 
 const rateoptions = document.querySelectorAll(".rateoption");
@@ -15,13 +21,13 @@ for (let option of rateoptions) {
     option.addEventListener("click", changeColor);
 }
 
-let lastToggled = null;
 
 function changeColor() {
     if (lastToggled !== null) { revertColor(lastToggled) }
     this.classList.remove("rateoption_basestate")
     this.classList.add("rateoption_activestate")
     lastToggled = this;
+    console.log(lastToggled)
 }
 
 function revertColor(element) {

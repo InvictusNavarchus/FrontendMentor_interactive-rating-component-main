@@ -7,6 +7,7 @@ submitBtn.addEventListener("click", function() {
     this.style.color = "rgb(249 115 22)";
     state_rating.classList.add("hidden");
     state_thankyou.classList.remove("hidden");
+    state_thankyou.classList.add("flex");
 })
 
 const rateoptions = document.querySelectorAll(".rateoption");

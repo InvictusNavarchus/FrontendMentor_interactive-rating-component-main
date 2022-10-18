@@ -31,11 +31,16 @@
         outline: rgb(189, 150, 150) solid 3px;
     }
     .attribution {
+        max-width: 85%;
+        padding: 5px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(99, 103, 112);
         font-size: 11px;
         text-align: center;
     }
     .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(228, 69%, 81%);
     }
 }
 

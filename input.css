@@ -6,9 +6,6 @@
     .card {
         @apply bg-gray-800 rounded-3xl flex-col gap-4 p-6;
     }
-}
-
-@layer utilities {
     .rateoption {
         display: inline-block;
         /* border: 1px solid red; */

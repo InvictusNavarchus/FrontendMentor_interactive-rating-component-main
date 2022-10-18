@@ -7,6 +7,7 @@ let lastToggled = null;
 let chosenOption;
 
 submitBtn.addEventListener("click", function() {
+    if (lastToggled === null) { return; }
     this.style.backgroundColor = "white";
     this.style.color = "rgb(249 115 22)";
     state_rating.classList.add("hidden");
@@ -15,6 +16,8 @@ submitBtn.addEventListener("click", function() {
     chosenOption = lastToggled.textContent;
     rateChoice.textContent = chosenOption;
 })
+
+
 
 const rateoptions = document.querySelectorAll(".rateoption");
 for (let option of rateoptions) {
@@ -27,6 +30,7 @@ function changeColor() {
     this.classList.remove("rateoption_basestate")
     this.classList.add("rateoption_activestate")
     lastToggled = this;
+    submitBtn.removeAttribute("disabled");
     console.log(lastToggled)
 }
 

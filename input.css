@@ -30,6 +30,10 @@
     .submit_btn:focus {
         outline: rgb(189, 150, 150) solid 3px;
     }
+    .submit_btn:disabled {
+        background-color: rgb(53, 52, 52);
+        opacity: 0.3;
+    }
     .attribution {
         max-width: 85%;
         padding: 5px 20px;

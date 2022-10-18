@@ -6,10 +6,16 @@
     .rateoption {
         display: inline-block;
         /* border: 1px solid red; */
-        background-color: rgba(60, 55, 78, 0.411);
-        color: rgba(255, 255, 255, 0.4);
         padding: 10px 18px;
         border-radius: 50%;
+    }
+    .rateoption_basestate {
+        background-color: rgba(60, 55, 78, 0.411);
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .rateoption_activestate {
+        background-color: rgb(151, 143, 127);
+        color: white;
     }
     .rateoption:hover {
         cursor: grab;

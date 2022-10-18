@@ -13,12 +13,12 @@ let lastToggled = null;
 
 function changeColor() {
     if (lastToggled !== null) { revertColor(lastToggled) }
-    this.style.color = "white"
-    this.style.backgroundColor = "#595959";
+    this.classList.remove("rateoption_basestate")
+    this.classList.add("rateoption_activestate")
     lastToggled = this;
 }
 
 function revertColor(element) {
-    element.style.color = "rgba(255, 255, 255, 0.4)";
-    element.style.backgroundColor = "rgba(60, 55, 78, 0.411)";
+    element.classList.remove("rateoption_activestate")
+    element.classList.add("rateoption_basestate")
 }

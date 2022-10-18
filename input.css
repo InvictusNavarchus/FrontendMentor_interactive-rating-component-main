@@ -11,6 +11,19 @@
         padding: 10px 18px;
         border-radius: 50%;
     }
+    .rateoption:hover {
+        cursor: grab;
+        background-color: rgb(228, 76, 30);
+        transition: ease 0.3s;
+    }
+    .submit_btn:active {
+        color: orange;
+        background-color: white;
+        transition: ease 0.1s;
+    }
+    .submit_btn:focus {
+        outline: rgb(189, 150, 150) solid 3px;
+    }
     .attribution {
         font-size: 11px;
         text-align: center;

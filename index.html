@@ -23,11 +23,13 @@
     <section id="state_rating" class="flex card">
       <!-- Rating state start -->
       <div class="mb-6"><img src="./images/icon-star.svg" alt=""></div>
-      <h2 class="text-2xl">How did we do?</h2>
-      <p class="opacity-50">
-        Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!
-      </p>
+      <div class="flex flex-col gap-4">
+        <h2 class="text-2xl">How did we do?</h2>
+        <p class="opacity-50">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
       <div class="flex justify-evenly"><span class="rateoption rateoption_basestate">1</span><span class="rateoption rateoption_basestate">2</span><span class="rateoption rateoption_basestate">3</span><span class="rateoption rateoption_basestate">4</span><span class="rateoption rateoption_basestate">5</span></div>
       <button disabled class="w-full p-3 bg-orange-500 rounded-3xl tracking-widest submit_btn">SUBMIT</button>
       <!-- Rating state end -->
@@ -35,12 +37,14 @@
     <section id="state_thankyou" class="hidden card justify-center items-center">
       <!-- Thank you state start -->
       <div><img src="./images/illustration-thank-you.svg" alt=""></div>
-      <p class="text-orange-500 opacity-80 py-1 px-3 rounded-2xl bg-slate-700 my-4">You selected <span id="ratechoice"></span> out of 5</p>
-      <h2 class="text-3xl font-bold">Thank you!</h2>
-      <p class="max-w-xs text-center opacity-50">
-        We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!
-      </p>
+      <p class="text-orange-500 opacity-80 py-1 px-3 rounded-2xl bg-slate-700">You selected <span id="ratechoice"></span> out of 5</p>
+      <div class="flex flex-col gap-4 items-center">
+        <h2 class="text-3xl font-bold">Thank you!</h2>
+        <p class="max-w-xs text-center opacity-50">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
       <!-- Thank you state end -->
     </section>    
   </main>

@@ -32,11 +32,12 @@
       <button class="w-full p-3 bg-orange-500 rounded-3xl tracking-widest submit_btn">SUBMIT</button>
       <!-- Rating state end -->
     </section>
-    <section id="state_thankyou" class="hidden">
+    <section id="state_thankyou" class="hidden flex flex-col justify-center items-center gap-4 p-6">
       <!-- Thank you state start -->
-      <p>You selected <span id="ratechoice"></span> out of 5</p>
-      <h2>Thank you!</h2>
-      <p>
+      <div><img src="./images/illustration-thank-you.svg" alt=""></div>
+      <p class="text-orange-500 opacity-80 py-1 px-3 rounded-2xl bg-slate-700 my-4">You selected <span id="ratechoice"></span> out of 5</p>
+      <h2 class="text-3xl font-bold">Thank you!</h2>
+      <p class="max-w-xs text-center opacity-50">
         We appreciate you taking the time to give a rating. If you ever need more support,
         don’t hesitate to get in touch!
       </p>

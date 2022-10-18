@@ -17,6 +17,8 @@
         transition: ease 0.3s;
     }
     .submit_btn:active {
+        color: orange;
+        background-color: white;
         transition: ease 0.1s;
     }
     .submit_btn:focus {

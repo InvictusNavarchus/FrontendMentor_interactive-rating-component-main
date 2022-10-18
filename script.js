@@ -1,7 +1,12 @@
+const state_rating = document.querySelector("#state_rating");
+const state_thankyou = document.querySelector("#state_thankyou");
 const submitBtn = document.querySelector(".submit_btn");
+
 submitBtn.addEventListener("click", function() {
     this.style.backgroundColor = "white";
     this.style.color = "rgb(249 115 22)";
+    state_rating.classList.add("hidden");
+    state_thankyou.classList.remove("hidden");
 })
 
 const rateoptions = document.querySelectorAll(".rateoption");
